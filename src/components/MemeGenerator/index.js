@@ -104,7 +104,7 @@ class MemeGenerator extends Component {
             <LabelText>Font Size</LabelText>
             <DropDown onChange={this.onChangeFont}>
               {fontSizesOptionsList.map(each => (
-                <DropDownList key={each.optionId}>
+                <DropDownList value={font} key={each.optionId}>
                   {each.displayText}
                 </DropDownList>
               ))}
